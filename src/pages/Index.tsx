@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 import Section from '../components/Section';
 import Features from '../components/Features';
 import CodeBlock from '../components/CodeBlock';
-import { ArrowRight, Github, ExternalLink } from 'lucide-react';
+import { ArrowRight, Github, ExternalLink, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
