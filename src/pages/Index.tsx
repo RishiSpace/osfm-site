@@ -168,15 +168,30 @@ const Index = () => {
           </div>
           
           <div className="mt-12">
-            <h3 className="text-xl font-bold mb-4 text-white">Installation Options</h3>
+            <h3 className="text-xl font-bold mb-4 text-white text-center">Installation Options</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+              <div className="text-center">
                 <h4 className="font-bold text-white mb-2">From PyPI</h4>
                 <CodeBlock code="pip install osfm" />
               </div>
-              <div>
+              <div className="text-center">
                 <h4 className="font-bold text-white mb-2">Clone From Source</h4>
                 <CodeBlock code="git clone https://github.com/RishiSpace/osfm -b osfm-py" />
+              </div>
+            </div>
+            <div className='flex justify-center'>
+              <div className="text-center">
+                <h4 className="font-bold text-white mb-2">Direct Download</h4>
+                  <a 
+                    href="https://github.com/RishiSpace/osfm/releases/latest/download/osfm-net.exe"
+                    className="text-osfm-lightGray hover:text-osfm-accentBlue transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" className="btn-outline">
+                      Download Executable
+                    </Button>
+                  </a>
               </div>
             </div>
           </div>
