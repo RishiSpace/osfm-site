@@ -172,8 +172,8 @@ const Index = () => {
                 <CodeBlock code="pip install osfm" />
               </div>
               <div>
-                <h4 className="font-bold text-white mb-2">From Source</h4>
-                <CodeBlock code="pip install git+https://github.com/username/OSFM.git" />
+                <h4 className="font-bold text-white mb-2">Clone From Source</h4>
+                <CodeBlock code="git clone https://github.com/RishiSpace/osfm -b osfm-py" />
               </div>
             </div>
           </div>
