@@ -17,22 +17,22 @@ const Index = () => {
       <Section 
         id="overview" 
         title="What is OSFM?" 
-        subtitle="OSFM-Net is a powerful Python module designed for network system management."
+        subtitle="OSFM is a powerful Python module designed for network system management."
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="mb-4">
-              OSFM-Net is a dual-mode Python module that provides comprehensive solutions for remote 
+              OSFM is a dual-mode Python module that provides comprehensive solutions for remote 
               file management and system access across your IT infrastructure.
             </p>
             <p className="mb-4">
-              Operating in both Server and Client modes, OSFM-Net enables administrators to 
+              Operating in both Server and Client modes, OSFM enables administrators to 
               efficiently manage applications, user accounts, network access, and remote 
               desktop connections from a centralized location.
             </p>
             <p>
               Whether you're managing a small office network or a large enterprise 
-              environment, OSFM-Net simplifies your IT administration tasks.
+              environment, OSFM simplifies your IT administration tasks.
             </p>
           </div>
           <div className="bg-gradient-to-br from-osfm-darkBlue to-black p-8 rounded-lg border border-osfm-darkBlue/50">
@@ -85,10 +85,10 @@ const Index = () => {
           </ul>
           
           <h3 className="text-xl font-bold mb-3 text-white">Installation Command</h3>
-          <CodeBlock code="pip install osfm-net" />
+          <CodeBlock code="pip install osfm" />
           
           <p className="mt-4">
-            This command will install OSFM-Net and all its dependencies to your Python environment.
+            This command will install OSFM and all its dependencies to your Python environment.
           </p>
           
           <div className="mt-8">
@@ -118,55 +118,15 @@ const Index = () => {
           <p className="mb-4">
             To connect to an OSFM server and run in client mode:
           </p>
-          <CodeBlock code="python -m osfm --client SERVER_IP" />
+          <CodeBlock code="python -m osfm --client" />
           
           <p className="mt-4 mb-6">
-            Replace SERVER_IP with the IP address of the server running OSFM.
+            This will launch OSFM in Client mode and search for Servers periodically.
           </p>
-          
-          <h3 className="text-xl font-bold mb-3 text-white">Advanced Usage</h3>
-          <p className="mb-4">
-            You can combine various flags to customize OSFM's behavior:
-          </p>
-          <CodeBlock code="python -m osfm --server --verbose --log-level debug" />
-          
-          <p className="mt-4">
-            For a complete list of available options, use the help command:
-          </p>
-          <CodeBlock code="python -m osfm --help" />
         </div>
       </Section>
       
-      <Section id="logging" title="Logging">
-        <div className="max-w-3xl mx-auto">
-          <p className="mb-6">
-            OSFM-Net maintains detailed logs to help with troubleshooting and auditing. All activities 
-            are recorded in the log file located at:
-          </p>
-          
-          <CodeBlock code="C:\\ProgramData\\osfm-net\\osfm-net.log" />
-          
-          <h3 className="text-xl font-bold mt-6 mb-3 text-white">Log Information</h3>
-          <p className="mb-4">
-            The log file contains the following information:
-          </p>
-          
-          <ul className="list-disc pl-5 mb-6 space-y-2">
-            <li>Timestamp of each operation</li>
-            <li>Operation type (server start/stop, client connection, etc.)</li>
-            <li>Success/failure status</li>
-            <li>Error messages and exceptions</li>
-            <li>User actions and system changes</li>
-          </ul>
-          
-          <h3 className="text-xl font-bold mb-3 text-white">Log Levels</h3>
-          <p className="mb-4">
-            You can adjust the logging verbosity by setting the appropriate log level:
-          </p>
-          
-          <CodeBlock code="python -m osfm --log-level [debug|info|warning|error|critical]" />
-        </div>
-      </Section>
+      
       
       <Section 
         id="download" 
@@ -175,12 +135,12 @@ const Index = () => {
       >
         <div className="max-w-3xl mx-auto text-center">
           <p className="mb-8">
-            Get the latest version of OSFM-Net and start optimizing your network management today.
+            Get the latest version of OSFM and start optimizing your network management today.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
             <a 
-              href="#" 
+              href="https://pypi.org/project/osfm/" 
               className="feature-card flex flex-col items-center justify-center p-8 hover:bg-osfm-darkBlue/30"
             >
               <Package size={48} className="text-osfm-accentBlue mb-4" />
@@ -192,7 +152,7 @@ const Index = () => {
             </a>
             
             <a 
-              href="#" 
+              href="https://github.com/RishiSpace/osfm/tree/osfm-py" 
               className="feature-card flex flex-col items-center justify-center p-8 hover:bg-osfm-darkBlue/30"
             >
               <Github size={48} className="text-osfm-accentBlue mb-4" />
@@ -209,11 +169,11 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-bold text-white mb-2">From PyPI</h4>
-                <CodeBlock code="pip install osfm-net" />
+                <CodeBlock code="pip install osfm" />
               </div>
               <div>
                 <h4 className="font-bold text-white mb-2">From Source</h4>
-                <CodeBlock code="pip install git+https://github.com/username/osfm-net.git" />
+                <CodeBlock code="pip install git+https://github.com/username/OSFM.git" />
               </div>
             </div>
           </div>
@@ -229,33 +189,27 @@ const Index = () => {
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-              <a href="#" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
+              <a href="https://github.com/RishiSpace" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
                 <Github size={18} className="mr-2" />
                 <span>GitHub</span>
               </a>
-              <a href="#" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
+              <a href="https://pypi.org/project/osfm/" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
                 <ExternalLink size={18} className="mr-2" />
                 <span>PyPI</span>
-              </a>
-              <a href="#" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
-                <span>Documentation</span>
-              </a>
-              <a href="#" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
-                <span>Support</span>
               </a>
             </div>
           </div>
           
           <div className="border-t border-osfm-darkBlue/30 pt-8 text-center md:text-left md:flex md:justify-between md:items-center">
             <p className="text-sm text-osfm-lightGray/70">
-              &copy; {new Date().getFullYear()} OSFM-Net. All rights reserved.
+              &copy; {new Date().getFullYear()} OSFM. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0">
-              <ul className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
+              {/* <ul className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
                 <li><a href="#" className="text-osfm-lightGray/70 hover:text-osfm-accentBlue transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="text-osfm-lightGray/70 hover:text-osfm-accentBlue transition-colors">Terms of Service</a></li>
                 <li><a href="#" className="text-osfm-lightGray/70 hover:text-osfm-accentBlue transition-colors">Contact</a></li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

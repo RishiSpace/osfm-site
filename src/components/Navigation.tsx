@@ -38,9 +38,8 @@ const Navigation = () => {
             <a href="#features" className="nav-link">Features</a>
             <a href="#installation" className="nav-link">Installation</a>
             <a href="#usage" className="nav-link">Usage</a>
-            <a href="#logging" className="nav-link">Logging</a>
-            <a href="#download" className="nav-link">Download</a>
-            <Button className="btn-primary ml-4">Get Started</Button>
+            <a href="#download" className="btn-primary">Download</a>
+            
           </nav>
           
           {/* Mobile Menu Button */}

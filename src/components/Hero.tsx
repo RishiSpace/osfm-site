@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">
-            Network System Management <span className="text-osfm-accentBlue">Made Simple</span>
+            Network-Wide System Management <span className="text-osfm-accentBlue">Made Simple</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-osfm-lightGray">
             Remote File Management and Access for Modern IT Infrastructure
@@ -34,7 +34,7 @@ const Hero = () => {
           
           <div className="mt-12 relative">
             <div className="code-block">
-              <pre><code>$ pip install osfm-net</code></pre>
+              <pre><code>$ pip install osfm</code></pre>
             </div>
           </div>
         </div>
