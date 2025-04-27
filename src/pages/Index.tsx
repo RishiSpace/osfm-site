@@ -181,7 +181,7 @@ const Index = () => {
             </div>
             <div className='flex justify-center'>
               <div className="text-center">
-                <h4 className="font-bold text-white mb-2">Direct Download</h4>
+                <h4 className="font-bold text-white mb-2">Or Download Directly</h4>
                   <a 
                     href="https://github.com/RishiSpace/osfm/releases/latest/download/osfm-net.exe"
                     className="text-osfm-lightGray hover:text-osfm-accentBlue transition-colors"
