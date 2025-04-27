@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -28,7 +27,13 @@ const Hero = () => {
               </a>
             </Button>
             <Button className="btn-outline" asChild>
-              <a href="#download">Download OSFM</a>
+              <a 
+                href="https://github.com/RishiSpace/osfm/releases/latest/download/osfm-net.exe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download OSFM
+              </a>
             </Button>
           </div>
           
