@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
@@ -79,7 +78,7 @@ const Index = () => {
           
           <h3 className="text-xl font-bold mb-3 text-white">Prerequisites</h3>
           <ul className="list-disc pl-5 mb-6 space-y-2">
-            <li>Python 3.6 or higher</li>
+            <li>Python 3.11 or higher</li>
             <li>pip package manager</li>
             <li>Administrative privileges on Windows systems</li>
           </ul>
@@ -142,6 +141,8 @@ const Index = () => {
             <a 
               href="https://pypi.org/project/osfm/" 
               className="feature-card flex flex-col items-center justify-center p-8 hover:bg-osfm-darkBlue/30"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Package size={48} className="text-osfm-accentBlue mb-4" />
               <h3 className="text-xl font-bold mb-2 text-white">PyPI Package</h3>
@@ -152,8 +153,10 @@ const Index = () => {
             </a>
             
             <a 
-              href="https://github.com/RishiSpace/osfm/tree/osfm-py" 
+              href="https://github.com/RishiSpace/osfm/tree/osfm-py"
               className="feature-card flex flex-col items-center justify-center p-8 hover:bg-osfm-darkBlue/30"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github size={48} className="text-osfm-accentBlue mb-4" />
               <h3 className="text-xl font-bold mb-2 text-white">Source Code</h3>
@@ -189,11 +192,11 @@ const Index = () => {
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-              <a href="https://github.com/RishiSpace" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
+              <a href="https://github.com/RishiSpace" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors" target="_blank" rel="noopener noreferrer">
                 <Github size={18} className="mr-2" />
                 <span>GitHub</span>
               </a>
-              <a href="https://pypi.org/project/osfm/" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors">
+              <a href="https://pypi.org/project/osfm/" className="flex items-center text-osfm-lightGray hover:text-osfm-accentBlue transition-colors" target="_blank" rel="noopener noreferrer">
                 <ExternalLink size={18} className="mr-2" />
                 <span>PyPI</span>
               </a>

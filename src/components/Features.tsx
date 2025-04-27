@@ -5,12 +5,12 @@ import { Server, Monitor, Package, Users, Network, ExternalLink } from 'lucide-r
 const featureItems = [
   {
     title: "Server Mode",
-    description: "Initializes the OSFM server and shares the temporary folder for seamless network management.",
+    description: "Initializes the OSFM server and shares the temporary folder for seamless network management and Network Sharing.",
     icon: Server
   },
   {
     title: "Client Mode",
-    description: "Enables RDP connections and starts the main client application for remote access.",
+    description: "Enables RDP connections and starts the main client to recieve commands from the server.",
     icon: Monitor
   },
   {
