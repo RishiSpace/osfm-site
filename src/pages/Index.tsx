@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
 import ProjectCard from '../components/ProjectCard';
+import Features from '../components/Features';
 import CodeBlock from '../components/CodeBlock';
 import { Github, ExternalLink } from 'lucide-react';
 
@@ -125,9 +126,18 @@ const Index = () => {
       </Section>
 
       <Section 
+        id="features" 
+        title="OSFM-Net Features" 
+        subtitle="Comprehensive network management capabilities for modern IT infrastructure."
+        className="bg-gradient-to-b from-osfm-darkBlue/20 to-black"
+      >
+        <Features />
+      </Section>
+
+      <Section 
         id="installation" 
         title="Getting Started with OSFM-Net"
-        className="bg-gradient-to-b from-osfm-darkBlue/20 to-black"
+        className="bg-gradient-to-b from-black to-osfm-darkBlue/20"
       >
         <div className="max-w-3xl mx-auto">
           <p className="mb-6">
@@ -152,6 +162,68 @@ const Index = () => {
             <div>
               <h4 className="font-bold text-white mb-2">Client Mode</h4>
               <CodeBlock code="python -m osfm --client" />
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-3 text-white">Application Management</h3>
+            <p className="mb-4">Install and uninstall applications across your network using Winget:</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-bold text-white mb-2">Install Application</h4>
+                <CodeBlock code="winget install [package-name]" />
+              </div>
+              <div>
+                <h4 className="font-bold text-white mb-2">Uninstall Application</h4>
+                <CodeBlock code="winget uninstall [package-name]" />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-3 text-white">User Account Management</h3>
+            <p className="mb-4">Create and manage user accounts across connected clients:</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-bold text-white mb-2">Create User</h4>
+                <CodeBlock code="net user [username] [password] /add" />
+              </div>
+              <div>
+                <h4 className="font-bold text-white mb-2">Delete User</h4>
+                <CodeBlock code="net user [username] /delete" />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-3 text-white">Network Access Control</h3>
+            <p className="mb-4">Control internet access across your network:</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-bold text-white mb-2">Enable Internet</h4>
+                <CodeBlock code="netsh interface set interface [connection] enable" />
+              </div>
+              <div>
+                <h4 className="font-bold text-white mb-2">Disable Internet</h4>
+                <CodeBlock code="netsh interface set interface [connection] disable" />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-3 text-white">Logging</h3>
+            <p className="mb-4">OSFM-Net provides comprehensive logging for all operations:</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Real-time logging of all network operations</li>
+              <li>Client connection and disconnection events</li>
+              <li>Application installation/uninstallation logs</li>
+              <li>User account management activities</li>
+              <li>Network access control changes</li>
+              <li>Error tracking and debugging information</li>
+            </ul>
+            <div className="mt-4">
+              <h4 className="font-bold text-white mb-2">View Logs</h4>
+              <CodeBlock code="python -m osfm --logs" />
             </div>
           </div>
         </div>
