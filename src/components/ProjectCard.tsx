@@ -63,7 +63,7 @@ const ProjectCard = ({
           <Button className="btn-primary flex-1" asChild>
             <a href={liveUrl} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="mr-2 h-4 w-4" />
-              Live Demo
+              Try it out
             </a>
           </Button>
         )}

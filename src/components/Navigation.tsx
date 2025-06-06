@@ -36,7 +36,6 @@ const Navigation = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#about" className="nav-link">About</a>
             <a href="#projects" className="nav-link">Projects</a>
-            <a href="#installation" className="nav-link">Installation</a>
             <a href="#projects" className="btn-primary">Explore</a>
           </nav>
           
@@ -56,7 +55,6 @@ const Navigation = () => {
           <nav className="flex flex-col space-y-4">
             <a href="#about" className="nav-link" onClick={toggleMenu}>About</a>
             <a href="#projects" className="nav-link" onClick={toggleMenu}>Projects</a>
-            <a href="#installation" className="nav-link" onClick={toggleMenu}>Installation</a>
             <Button className="btn-primary w-full" asChild>
               <a href="#projects" onClick={toggleMenu}>Explore Projects</a>
             </Button>
