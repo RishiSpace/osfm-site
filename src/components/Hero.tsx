@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">
-            <span className="text-osfm-accentBlue">OSFM</span> Ecosystem
+            <span className="text-osfm-accentBlue">OSFM</span>
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
             Operating System Function Management

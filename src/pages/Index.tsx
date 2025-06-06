@@ -78,11 +78,11 @@ const Index = () => {
       <Section 
         id="about" 
         title="About OSFM" 
-        subtitle="Operating System Function Management - A comprehensive ecosystem of developer and system administration tools."
+        subtitle="A comprehensive ecosystem of developer and system administration tools."
       >
         <div className="max-w-4xl mx-auto">
           <p className="text-lg mb-6">
-            OSFM (Operating System Function Management) is a comprehensive suite of tools designed to enhance 
+            OSFM is a comprehensive suite of tools designed to enhance 
             productivity for developers, system administrators, and power users. Each project in the OSFM 
             ecosystem addresses specific needs in modern computing workflows.
           </p>
