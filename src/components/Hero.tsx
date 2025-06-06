@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,35 +13,28 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-3xl animate-fade-in">
+        <div className="max-w-4xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6">
-            Network-Wide System Management <span className="text-osfm-accentBlue">Made Simple</span>
+            <span className="text-osfm-accentBlue">OSFM</span>
           </h1>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+            Operating System Function Management
+          </h2>
           <p className="text-xl md:text-2xl mb-8 text-osfm-lightGray">
-            Remote File Management and Access for Modern IT Infrastructure
+            A comprehensive suite of tools for modern developers and system administrators
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="btn-primary group" asChild>
-              <a href="#overview">
-                Learn More
+              <a href="#projects">
+                Explore Projects
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
             <Button className="btn-outline" asChild>
-              <a 
-                href="https://github.com/RishiSpace/osfm/releases/latest/download/osfm-net.exe"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download OSFM
+              <a href="#about">
+                Learn More
               </a>
             </Button>
-          </div>
-          
-          <div className="mt-12 relative">
-            <div className="code-block">
-              <pre><code>$ pip install osfm</code></pre>
-            </div>
           </div>
         </div>
       </div>

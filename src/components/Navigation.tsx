@@ -34,12 +34,9 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#overview" className="nav-link">Overview</a>
-            <a href="#features" className="nav-link">Features</a>
-            <a href="#installation" className="nav-link">Installation</a>
-            <a href="#usage" className="nav-link">Usage</a>
-            <a href="#download" className="btn-primary">Download</a>
-            
+            <a href="#about" className="nav-link">About</a>
+            <a href="#projects" className="nav-link">Projects</a>
+            <a href="#projects" className="btn-primary">Explore</a>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -56,13 +53,11 @@ const Navigation = () => {
       <div className={`md:hidden absolute w-full bg-black/95 backdrop-blur-md transition-all duration-300 ${isOpen ? 'max-h-screen py-4' : 'max-h-0 overflow-hidden'}`}>
         <div className="container mx-auto px-4">
           <nav className="flex flex-col space-y-4">
-            <a href="#overview" className="nav-link" onClick={toggleMenu}>Overview</a>
-            <a href="#features" className="nav-link" onClick={toggleMenu}>Features</a>
-            <a href="#installation" className="nav-link" onClick={toggleMenu}>Installation</a>
-            <a href="#usage" className="nav-link" onClick={toggleMenu}>Usage</a>
-            <a href="#logging" className="nav-link" onClick={toggleMenu}>Logging</a>
-            <a href="#download" className="nav-link" onClick={toggleMenu}>Download</a>
-            <Button className="btn-primary w-full">Get Started</Button>
+            <a href="#about" className="nav-link" onClick={toggleMenu}>About</a>
+            <a href="#projects" className="nav-link" onClick={toggleMenu}>Projects</a>
+            <Button className="btn-primary w-full" asChild>
+              <a href="#projects" onClick={toggleMenu}>Explore Projects</a>
+            </Button>
           </nav>
         </div>
       </div>
