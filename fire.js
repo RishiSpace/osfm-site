@@ -44,7 +44,7 @@ async function logVisitorInfo() {
       timestamp: new Date().toISOString()
     });
 
-    console.log("VL: 1", ip);
+    console.log("VL: 1");
   } catch (err) {
     console.error("VL err:", err);
   }
